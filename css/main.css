@@ -9,8 +9,8 @@ body {
   font-family: 'Satoshi', sans-serif;
   user-select: none;
   overflow-x: hidden;
-  background-color: #fbfbf0;
-  color: #2f2f2f;
+  background-color: #2f2f2f;
+  color: #fbfbf0;
   transition: background-color 0.5s, color 0.5s;
   width:100%;
 }
