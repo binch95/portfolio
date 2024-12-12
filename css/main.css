@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Satoshi', sans-serif;
+}
+
+body {
+  font-family: 'Satoshi', sans-serif;
+  user-select: none;
+  overflow-x: hidden;
+  background-color: #fbfbf0;
+  color: #2f2f2f;
+  transition: background-color 0.5s, color 0.5s;
+  width:100%;
+}
+main {
+  padding:0 2rem;
+}
+.dark-mode {
+  background-color: #2f2f2f;
+  color: #f6f6dc;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  z-index:12;
+  position: -webkit-sticky;
+  position: sticky;
+  top:1rem;
+}
+
+.top-bar a {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  margin-right: 1rem;
+}
+
+.top-bar button {
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #2f2f2f;
+  color: #f6f6dc;
+  border-radius: 4px;
+}
+
+.header {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.header h1 {
+  font-family: 'Clash Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 0.5rem;
+}
+.introduce ul li{
+  margin-bottom: 10px;
+}
+.nav-bar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-bar li {
+  margin: 0 1rem;
+}
+
+.nav-bar a {
+  font-weight: 300;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.25rem;
+}
+.title-section, .subtitle-section {
+  position: relative;
+}
+.main-section {
+  padding:  2rem;
+  padding-top:10rem;
+  text-align: center;
+  height:100%;
+  min-height:80vh;
+  /*
+  */
+}
+
+.main-section h2 {
+  font-family: 'Clash Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.main-section p {
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.dark-mode .top-bar button {
+  background-color: #444;
+}
+
+@media (max-width: 767px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .menu-toggle:checked+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header h1 {
+    font-size: 40px;
+  }
+}
+
+.toggle-button-cover {
+  display: table-cell;
+  position: relative;
+  box-sizing: border-box;
+  transform:scale(0.45);
+  transform-origin:center right;
+}
+
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  top: 50%;
+  width: 74px;
+  height: 36px;
+  margin: -20px auto 0 auto;
+  overflow: hidden;
+}
+
+.button.r,
+.button.r .layer {
+  border-radius: 100px;
+}
+
+.button.b2 {
+  border-radius: 2px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #f6f6dc;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+#toggle-button .knobs:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 10px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  background-color: #2f2f2f;
+  border-radius: 50%;
+  transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
+
+#toggle-button .checkbox:active + .knobs:before {
+  width: 46px;
+  border-radius: 100px;
+}
+
+#toggle-button .checkbox:checked:active + .knobs:before {
+  margin-left: -26px;
+}
+
+#toggle-button .checkbox:checked + .knobs:before {
+  content: "";
+  left: 42px;
+  background-color: #2f2f2f;
+}
+
+#toggle-button .checkbox:checked ~ .layer {
+  background-color: #fcebeb;
+}
+.myImg, .introduce{
+  display: inline-block;
+  width: 10%;
+  height: 10%;
+}
+.myImg > img{
+  width: auto;
+  height: auto;
+}
+.projects-list{
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
+}
+
+i {
+  font-size: 70px;
+}
+
+img{
+  display: inline-block;
+}
