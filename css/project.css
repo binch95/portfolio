@@ -10,23 +10,21 @@
   font-family: 'Satoshi', sans-serif;
   font-size: calc(12 * var(--rpx-vw));
 }
-path:hover {
 
-}
 body {
   font-family: 'Satoshi', sans-serif;
   user-select: none;
-  /*overflow-x: hidden;*/
   overflow: hidden;
   background-color: #2f2f2f;
   color: #fbfbf0;
   transition: background-color 0.5s, color 0.5s;
-  width:100%;
-  margin: 0;
+  width: 100%;
 }
+
 main {
-  padding:0 2rem;
+  padding: 0 2rem;
 }
+
 .dark-mode {
   background-color: #2f2f2f;
   color: #f6f6dc;
@@ -37,10 +35,9 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  z-index:12;
-  position: -webkit-sticky;
+  z-index: 12;
   position: sticky;
-  top:1rem;
+  top: 1rem;
 }
 
 .top-bar a {
@@ -74,9 +71,11 @@ main {
   font-size: calc(28 * var(--rpx-vw));
   margin-bottom: 0.5rem;
 }
-.introduce ul li{
+
+.introduce ul li {
   margin-bottom: 10px;
 }
+
 .nav-bar ul {
   display: flex;
   justify-content: center;
@@ -93,17 +92,17 @@ main {
   color: inherit;
   font-size: calc(12 * var(--rpx-vw));
 }
+
 .title-section, .subtitle-section {
   position: relative;
 }
+
 .main-section {
-  padding:  2rem;
-  padding-top:10rem;
+  padding: 2rem;
+  padding-top: 10rem;
   text-align: center;
-  height:100%;
+  height: 100%;
   margin-bottom: 3rem;
-  /*
-  */
 }
 
 .main-section h2 {
@@ -119,7 +118,7 @@ main {
   margin-bottom: 2rem;
 }
 
-h3{
+h3 {
   font-size: calc(19 * var(--rpx-vw));
 }
 
@@ -141,25 +140,22 @@ h3{
     display: block;
   }
 
-
-  .menu-toggle:checked+.nav-bar {
+  .menu-toggle:checked + .nav-bar {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
 }
 
 .toggle-button-cover {
   display: table-cell;
   position: relative;
   box-sizing: border-box;
-  transform:scale(0.45);
-  transform-origin:center right;
+  transform: scale(0.45);
+  transform-origin: center right;
 }
 
-.knobs,
-.layer {
+.knobs, .layer {
   position: absolute;
   top: 0;
   right: 0;
@@ -176,8 +172,7 @@ h3{
   overflow: hidden;
 }
 
-.button.r,
-.button.r .layer {
+.button.r, .button.r .layer {
   border-radius: 100px;
 }
 
@@ -206,6 +201,7 @@ h3{
   transition: 0.3s ease all;
   z-index: 1;
 }
+
 #toggle-button .knobs:before {
   content: "";
   position: absolute;
@@ -242,16 +238,19 @@ h3{
 #toggle-button .checkbox:checked ~ .layer {
   background-color: #fcebeb;
 }
-.myImg, .introduce{
+
+.myImg, .introduce {
   display: inline-block;
   width: 10%;
   height: 10%;
 }
-.myImg > img{
+
+.myImg > img {
   width: auto;
   height: auto;
 }
-.projects-list{
+
+.projects-list {
   margin-right: auto;
   margin-left: auto;
   width: 70%;
@@ -261,8 +260,6 @@ i {
   font-size: calc(12 * var(--rpx-vw));
 }
 
-img{
+img {
   display: inline-block;
 }
-
-
