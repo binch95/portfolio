@@ -1,18 +1,28 @@
+:root {
+  --rpx-vw: 100vw / 1440;
+  --rpx-vh: 100vh / 1024;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Satoshi', sans-serif;
+  font-size: calc(12 * var(--rpx-vw));
 }
+path:hover {
 
+}
 body {
   font-family: 'Satoshi', sans-serif;
   user-select: none;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
+  overflow: hidden;
   background-color: #2f2f2f;
   color: #fbfbf0;
   transition: background-color 0.5s, color 0.5s;
   width:100%;
+  margin: 0;
 }
 main {
   padding:0 2rem;
@@ -61,7 +71,7 @@ main {
 .header h1 {
   font-family: 'Clash Grotesk', sans-serif;
   font-weight: 700;
-  font-size: 60px;
+  font-size: calc(24 * var(--rpx-vw));
   margin-bottom: 0.5rem;
 }
 .introduce ul li{
@@ -82,7 +92,7 @@ main {
   font-weight: 300;
   text-decoration: none;
   color: inherit;
-  font-size: 1.25rem;
+  font-size: calc(12 * var(--rpx-vw));
 }
 .title-section, .subtitle-section {
   position: relative;
@@ -100,16 +110,19 @@ main {
 .main-section h2 {
   font-family: 'Clash Grotesk', sans-serif;
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: calc(20 * var(--rpx-vw));
   margin-bottom: 1rem;
 }
 
 .main-section p {
   font-weight: 300;
-  font-size: 1.25rem;
+  font-size: calc(12 * var(--rpx-vw));
   margin-bottom: 2rem;
 }
 
+h3{
+  font-size: calc(17 * var(--rpx-vw));
+}
 
 .menu-toggle {
   display: none;
@@ -140,7 +153,7 @@ main {
   }
 
   .header h1 {
-    font-size: 40px;
+    font-size: calc(24 * var(--rpx-vw));
   }
 }
 
@@ -208,7 +221,7 @@ main {
   width: 20px;
   height: 10px;
   color: #fff;
-  font-size: 10px;
+  font-size: calc(10 * var(--rpx-vw));
   font-weight: bold;
   text-align: center;
   line-height: 1;
@@ -252,9 +265,19 @@ main {
 }
 
 i {
-  font-size: 70px;
+  font-size: calc(12 * var(--rpx-vw));
 }
 
 img{
   display: inline-block;
+}
+
+
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+path:hover {
+
 }
