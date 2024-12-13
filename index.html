@@ -50,6 +50,7 @@
         <li><a href="#about" data-scroll>About</a></li>
         <li><a href="#studies_or_project" data-scroll>Studies & project</a></li>
         <li><a href="#portfolio" data-scroll>Portfolio</a></li>
+        <li><a href="#Stack" data-scroll>Stack</a></li>
         <li><a href="#contact" data-scroll>Contact</a></li>
       </ul>
     </nav>
@@ -154,7 +155,7 @@
 
   </section>
 
-  <section id="contact" class="main-section" data-scroll-section>
+  <section id="Stack" class="main-section" data-scroll-section>
     <h2 class="title-section" data-scroll data-scroll-speed="1">Technology Stack</h2>
 
     <div class="projects-list" style="text-align: left; margin-bottom: 80px">
@@ -213,6 +214,32 @@
     </div>
 
   </section>
+
+  <section id="contact" class="main-section" data-scroll-section style="margin-top: -15rem">
+    <h2 class="title-section" data-scroll data-scroll-speed="1">Contact Me</h2>
+    <form action="/submit" method="POST">
+      <div class="contact mr-auto ml-auto" data-scroll data-scroll-speed="2" style="text-align: left; width: 30rem">
+        <div class="form__group field">
+          <input type="input" class="form__field" placeholder="Name" required="">
+          <label  class="form__label">Name</label>
+        </div>
+        <div class="form__group field">
+          <input type="tel" class="form__field" placeholder="Phone" required="">
+          <label  class="form__label">Phone</label>
+        </div>
+        <div class="form__group field">
+          <textarea class="form__field" id="message" name="message" rows="4" placeholder="Body" required></textarea><br><br>
+          <label  class="form__label">Body</label>
+        </div>
+        <div style="text-align: center">
+        <button type="submit">보내기</button>
+        </div>
+        <p></p>
+
+      </div>
+    </form>
+  </section>
+
 </main>
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
