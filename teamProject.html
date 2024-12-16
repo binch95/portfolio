@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="light">
   <meta name="supported-color-schemes" content="light">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css">
   <title>KICKNAYSIS - Team Project</title>
 </head>
@@ -14,24 +13,24 @@
 <body>
 <div class="container mx-auto px-4 py-8">
   <header class="mb-8 text-center">
-    <h1 class="font-bold mb-4">KICKNAYSIS</h1>
+    <h1 class="font-bold mb-4 text-4xl">KICKNAYSIS</h1>
     <p>팀 프로젝트</p>
   </header>
 
   <section class="mb-8">
-    <h2 class="font-semibold mb-2">수행기간</h2>
+    <h2 class="font-semibold mb-2 text-2xl">수행기간</h2>
     <p>2024.10.18. -</p>
   </section>
 
   <section class="mb-8">
-    <h2 class="font-semibold mb-2">목표</h2>
+    <h2 class="font-semibold mb-2 text-2xl">목표</h2>
     <p>
       경기 동영상에 대한 분석 기능을 제공하는 해외 축구 경기 예측 사이트
     </p>
   </section>
 
   <section class="mb-8">
-    <h2 class="font-semibold mb-2">내용</h2>
+    <h2 class="font-semibold mb-2 text-2xl">내용</h2>
     <p class="mb-4">
       축구 경기 관람에 취미를 가진 사람들이 경기에 대한 분석 및 결과 예측을 하며 커뮤니티로 소통할 수 있는 기능을 제공함과 동시에,
       결과 예측을 위한 축구 경기 영상 분석 서비스를 제공하여 기술적, 기능적인 부분에서 기존 사이트보다 발전된 사이트를 제작하고자 하였습니다.
@@ -48,14 +47,14 @@
   </section>
 
   <section class="mb-8">
-    <h2 class="font-semibold mb-2">설계/프로세스</h2>
-    <h3 class="font-semibold mb-2">1. 개발환경</h3>
+    <h1 class="font-semibold mb-2 text-3xl">설계/프로세스</h1>
+    <h2 class="font-semibold mt-4 text-2xl">1. 개발환경</h2>
     <p>Windows10, Intellij IDE</p>
 
-    <h3 class="font-semibold mb-2">2. 버전컨트롤/콜라보레이션</h3>
+    <h2 class="font-semibold mt-4 text-2xl">2. 버전컨트롤/콜라보레이션</h2>
     <p>Git, Github, Notion, Figma</p>
 
-    <h3 class="font-semibold mb-2">3. 웹페이지</h3>
+    <h2 class="font-semibold mt-4 text-2xl">3. 웹페이지</h2>
     <ul class="list-disc list-inside mb-4">
       <li><strong>백엔드:</strong> Java, SpringBoot, Mybatis, SpringSecurity, Selenium, lombok</li>
       <li><strong>프론트엔드:</strong> HTML/CSS/JS, Jquery, Ajax, Tailwind CSS, Thymeleaf</li>
@@ -63,12 +62,52 @@
       <li><strong>배포:</strong> AWS, Docker</li>
     </ul>
 
-    <h3 class="font-semibold mb-2">4. 동영상 분석</h3>
+    <h2 class="font-semibold mt-4 text-2xl">4. 동영상 분석</h2>
     <ul class="list-disc list-inside">
       <li><strong>언어:</strong> Python</li>
       <li><strong>라이브러리/프레임워크:</strong> Flask, Pytorch, OpenCV, YOLO, TSM, Samurai</li>
       <li><strong>데이터 처리:</strong> NumPy, Matplotlib</li>
     </ul>
+
+    <h2 class="font-semibold mt-4 text-2xl">5. 역활 분담</h2>
+    <ul class="list-disc list-inside">
+      <ol start="1"><strong>이윤정(팀장) : </strong>
+        <li>- 반응형 웹 프론트엔드 구현 전반</li>
+        <li>- Member 인증 로직(Security)</li>
+        <li>- CORS 매핑, CSRF 등 보안로직</li>
+        <li>- Flask기반 영상 분석 API 제장</li>
+        <li>- SpringBoot <-> Flask API 통신</li>
+        <li>- Notion 관리 및 일정 관리</li>
+      </ol>
+      <ol><strong>장홍빈(조원) : </strong>
+        <li>- 상품교환 및 관련 페이지 구현</li>
+        <li>- 상품 저장 및 교환 시스템(문자전송) 기능 구현</li>
+        <li>- 고객센터 페이지 구현(자주묻는 Q&A, 1:1 질문 답변)</li>
+        <li>- 상품 기프티콘 저장 구글 클라우드 연결</li>
+        <li>- Toast UI Image custom(addImageBlobHook) 및 markdown 자동인코딩 디코딩 기능</li>
+        <li>- Toast UI Image Click시 Input image창으로 변환(Toast UI에서는 multiple기능이 안됨으로 인하여 변경)</li>
+        <li>- 영상 이벤트 감지 모델 학습 및 영상 데이터 추출</li>
+        <li>- 일부 페이지 프론트엔드 보조(기프티콘 및 고객센터)</li>
+      </ol>
+      <ol><strong>유근찬(조원) : </strong>
+        <li>- DB 기획 및 ERD 제작, 각종 문서화</li>
+        <li>- 뉴스/경기일정 데이터 크롤링/파싱</li>
+        <li>- 승무패 예측 및 포인트 관련 기능</li>
+        <li>- 게시글 동영상 첨부 기능</li>
+        <li>- 경기일정 데이터 크롤링 자동화</li>
+        <li>- 프로젝트 AWS 배포</li>
+      </ol>
+      <ol><strong>강기범(조원) : </strong>
+        <li>- Article CRUD 베이스 제작</li>
+        <li>- Member CRUD 베이스 제작</li>
+        <li>- 초기 Member 인증 로직</li>
+        <li>- 기타 UI 후처리 로직</li>
+        <li>- 프로젝트 아이디어 제공</li>
+      </ol>
+    </ul>
+
+    <h2 class="font-semibold mt-4 text-2xl">6. 프로젝트 발표 PPT</h2>
+    <a href="TeamProject1.pdf" target="_blank">Click</a>
   </section>
 </div>
 </body>
