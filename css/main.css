@@ -8,16 +8,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Satoshi', sans-serif;
-  font-size: calc(12 * var(--rpx-vw));
+  font-size: calc(42 * var(--rpx-vw));
 }
-path:hover {
 
-}
 body {
   font-family: 'Satoshi', sans-serif;
   user-select: none;
-  /*overflow-x: hidden;*/
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #2f2f2f;
   color: #fbfbf0;
   transition: background-color 0.5s, color 0.5s;
@@ -71,7 +68,7 @@ main {
 .header h1 {
   font-family: 'Clash Grotesk', sans-serif;
   font-weight: 700;
-  font-size: calc(28 * var(--rpx-vw));
+  font-size: calc(58 * var(--rpx-vw));
   margin-bottom: 0.5rem;
 }
 .introduce ul li{
@@ -91,7 +88,7 @@ main {
 .nav-bar a {
   text-decoration: none;
   color: inherit;
-  font-size: calc(12 * var(--rpx-vw));
+  font-size: calc(42 * var(--rpx-vw));
 }
 .title-section, .subtitle-section {
   position: relative;
@@ -109,18 +106,18 @@ main {
 .main-section h2 {
   font-family: 'Clash Grotesk', sans-serif;
   font-weight: 600;
-  font-size: calc(24 * var(--rpx-vw));
+  font-size: calc(54 * var(--rpx-vw));
   margin-bottom: 1rem;
 }
 
 .main-section p {
   font-weight: 300;
-  font-size: calc(12 * var(--rpx-vw));
+  font-size: calc(42 * var(--rpx-vw));
   margin-bottom: 2rem;
 }
 
 h3{
-  font-size: calc(19 * var(--rpx-vw));
+  font-size: calc(49 * var(--rpx-vw));
 }
 
 .menu-toggle {
@@ -214,7 +211,7 @@ h3{
   width: 20px;
   height: 10px;
   color: #fff;
-  font-size: calc(10 * var(--rpx-vw));
+  font-size: calc(40 * var(--rpx-vw));
   font-weight: bold;
   text-align: center;
   line-height: 1;
@@ -244,8 +241,8 @@ h3{
 }
 .myImg, .introduce{
   display: inline-block;
-  width: 10%;
-  height: 10%;
+  width: 20%;
+  height: 20%;
 }
 .myImg > img{
   width: auto;
@@ -258,7 +255,7 @@ h3{
 }
 
 i {
-  font-size: calc(12 * var(--rpx-vw));
+  font-size: calc(42 * var(--rpx-vw));
 }
 
 img{
@@ -277,7 +274,7 @@ img{
   border: none;
   border-bottom: 2px solid #9b9b9b;
   outline: 0;
-  font-size: calc(12 * var(--rpx-vw));
+  font-size: calc(32 * var(--rpx-vw));
   color: #fff;
   padding: 7px 0;
   background: transparent;
@@ -289,7 +286,7 @@ img{
 }
 
 .form__field:placeholder-shown ~ .form__label {
-  font-size: calc(12 * var(--rpx-vw));
+  font-size: calc(19 * var(--rpx-vw));
   cursor: text;
   top: 20px;
 }
@@ -299,7 +296,7 @@ img{
   top: 0;
   display: block;
   transition: 0.2s;
-  font-size: calc(12 * var(--rpx-vw));
+  font-size: calc(22 * var(--rpx-vw));
   color: #9b9b9b;
   pointer-events: none;
 }
@@ -317,7 +314,7 @@ img{
   top: 0;
   display: block;
   transition: 0.2s;
-  font-size: calc(12 * var(--rpx-vw));
+  font-size: calc(19 * var(--rpx-vw));
   color: #38caef;
   font-weight: 700;
 }
@@ -332,7 +329,7 @@ button {
   color: #fff;
   cursor: pointer;
   font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-size: calc(16 * var(--rpx-vw));
+  font-size: calc(40 * var(--rpx-vw));
   font-weight: 700;
   line-height: 1.5;
   text-decoration: none;

@@ -48,7 +48,7 @@
     <nav class="nav-bar">
       <ul>
         <li><a href="#about" data-scroll>About</a></li>
-        <li><a href="#studies_or_project" data-scroll>Studies & project</a></li>
+        <li><a href="#studies_or_project" data-scroll>Studies</a></li>
         <li><a href="#portfolio" data-scroll>Portfolio</a></li>
         <li><a href="#Stack" data-scroll>Stack</a></li>
         <li><a href="#contact" data-scroll>Contact</a></li>
@@ -60,15 +60,17 @@
   <section id="about" class="main-section" data-scroll-section>
     <h2 class="title-section" data-scroll data-scroll-speed="1">About Me</h2>
     <p class="subtitle-section" data-scroll data-scroll-speed="2">Introduce my self</p>
-    <div class="myImg"><img src="img/me.jpg" alt=""></div>
-    <div class="introduce" style="text-align: left; margin-left: 60px; width: auto">
-      <ul>
-        <li>이름 : 장홍빈</li>
-        <li>생년월일 : 950730</li>
-        <li>전화번호 : 010-6448-0039</li>
-        <li>Email : qlscm95@gmail.com</li>
+    <div>
+      <div class="myImg"><img src="img/me.jpg" alt=""></div>
+      <div class="introduce" style="text-align: left; margin-left: 60px; width: auto">
+        <ul>
+          <li>이름 : 장홍빈</li>
+          <li>생년월일 : 950730</li>
+          <li>전화번호 : 010-6448-0039</li>
+          <li>Email : qlscm95@gmail.com</li>
 
-      </ul>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -142,11 +144,13 @@
     <div class="projects-list" style="text-align: left">
       <div class="project">
         <div class="project" data-scroll data-scroll-speed="2">
-          <a href="soloProject.html" style="display: inline-block"> 개인 프로젝트 </a> <p style="margin-left: 5px; display: inline-block; font-size: calc(9 * (100vw / 1440))"> <- 자세히 보러가기 </p>
+          <a href="soloProject.html" style="display: inline-block"> 개인 프로젝트 </a>
+          <p style="margin-left: 5px; display: inline-block; font-size: calc(9 * (100vw / 1440))"> <- 자세히 보러가기 </p>
           <p> - 중고 경매 홈페이지</p>
         </div>
         <div class="project" data-scroll data-scroll-speed="2">
-          <a href="teamProject.html" style="display: inline-block"> 팀 프로젝트 </a> <p style="margin-left: 5px; display: inline-block; font-size: calc(9 * (100vw / 1440))"> <- 자세히 보러가기 </p>
+          <a href="teamProject.html" style="display: inline-block"> 팀 프로젝트 </a>
+          <p style="margin-left: 5px; display: inline-block; font-size: calc(9 * (100vw / 1440))"> <- 자세히 보러가기 </p>
           <p> - 경기 동영상에 대한 분석 기능을 제공하는 해외 축구 경기 예측 사이트</p>
         </div>
 
@@ -195,8 +199,8 @@
         <div class="project" data-scroll data-scroll-speed="2">
           <h2>Database</h2>
           <div style="width: auto; display: inline-block; margin-right: 45px">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="mysql Icon"
-               style="width:100px; height:100px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="mysql Icon"
+                 style="width:100px; height:100px;">
             <p style="text-align: center">MySQL</p>
           </div>
         </div>
@@ -204,10 +208,10 @@
         <div class="project" data-scroll data-scroll-speed="2">
           <h2>Tools/ DevOps</h2>
           <div style="width: auto; display: inline-block; margin-right: 45px">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="git Icon"
-               style="width:100px; height:100px;">
-          <p style="text-align: center">GIT HUB</p>
-        </div>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="git Icon"
+                 style="width:100px; height:100px;">
+            <p style="text-align: center">GIT HUB</p>
+          </div>
         </div>
 
       </div>
@@ -217,24 +221,28 @@
 
   <section id="contact" class="main-section" data-scroll-section style="margin-top: -15rem">
     <h2 class="title-section" data-scroll data-scroll-speed="1">Contact Me</h2>
-    <form action="/submit" method="POST">
+    <form action="https://script.google.com/macros/s/AKfycbwo3SN-lZ5cdY575-lOWh2oR3H00SmXkAH06rn5Eoumgjn8pQxHxlx-WDsmWMC7_G9s/exec" method="POST" target="frAttechFiles" onsubmit="alert('Thank you');">
       <div class="contact mr-auto ml-auto" data-scroll data-scroll-speed="2" style="text-align: left; width: 30rem">
         <div class="form__group field">
-          <input type="input" class="form__field" placeholder="Name" required="">
+          <input type="text" class="form__field" placeholder="name" required="" name="name">
           <label  class="form__label">Name</label>
         </div>
         <div class="form__group field">
-          <input type="tel" class="form__field" placeholder="Phone" required="">
-          <label  class="form__label">Phone</label>
+          <input type="text" class="form__field" placeholder="E-mail" required="" name="email">
+          <label  class="form__label">E-mail</label>
+        </div>
+        <div class="form__group field">
+          <input type="tel" class="form__field" placeholder="Phone" required="" name="tel">
+          <label  class="form__label">Tel.</label>
         </div>
         <div class="form__group field">
           <textarea class="form__field" id="message" name="message" rows="4" placeholder="Body" required></textarea><br><br>
           <label  class="form__label">Body</label>
         </div>
         <div style="text-align: center">
-        <button type="submit">보내기</button>
+          <button type="submit">보내기</button>
         </div>
-        <p></p>
+        <iframe name="frAttechFiles" style="display: none"></iframe>
 
       </div>
     </form>
