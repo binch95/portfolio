@@ -1,6 +1,6 @@
 :root {
-  --rpx-vw: 100vw / 1440;
-  --rpx-vh: 100vh / 1024;
+  --rpx-vw: 100vw / 1920;
+  --rpx-vh: 100vh / 1080;
 }
 
 * {
@@ -124,20 +124,9 @@ h3{
   display: none;
 }
 
-.hamburger {
-  display: none;
-  cursor: pointer;
-}
-
 .dark-mode .top-bar button {
   background-color: #444;
 }
-
-@media (max-width: 767px) {
-  .hamburger {
-    display: block;
-  }
-
 
   .menu-toggle:checked+.nav-bar {
     display: flex;
@@ -253,11 +242,11 @@ h3{
   margin-left: auto;
   width: 70%;
 }
-.main-section > .projects-list .project p{
+.main-section > .studies_list .project p{
   display: none;
 }
 
-.main-section > .projects-list .project:hover p{
+.main-section > .studies_list .project:hover p{
   display: block;
   color: #999999;
 }

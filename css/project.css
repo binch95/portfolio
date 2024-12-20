@@ -126,19 +126,12 @@ h3 {
   display: none;
 }
 
-.hamburger {
-  display: none;
-  cursor: pointer;
-}
+
 
 .dark-mode .top-bar button {
   background-color: #444;
 }
 
-@media (max-width: 767px) {
-  .hamburger {
-    display: block;
-  }
 
   .menu-toggle:checked + .nav-bar {
     display: flex;
