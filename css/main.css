@@ -253,6 +253,14 @@ h3{
   margin-left: auto;
   width: 70%;
 }
+.main-section > .projects-list .project p{
+  display: none;
+}
+
+.main-section > .projects-list .project:hover p{
+  display: block;
+  color: #999999;
+}
 
 i {
   font-size: calc(42 * var(--rpx-vw));
