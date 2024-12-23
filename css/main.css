@@ -45,7 +45,7 @@ main {
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
-  margin-right: 1rem;
+  margin-right: calc(15 * var(--rpx-vw));
 }
 
 .top-bar button {
@@ -69,10 +69,10 @@ main {
   font-family: 'Clash Grotesk', sans-serif;
   font-weight: 700;
   font-size: calc(58 * var(--rpx-vw));
-  margin-bottom: 0.5rem;
+  margin-bottom: calc(15 * var(--rpx-vw));
 }
 .introduce ul li{
-  margin-bottom: 10px;
+  margin-bottom: calc(10 * var(--rpx-vw));
 }
 .nav-bar ul {
   display: flex;
@@ -98,22 +98,22 @@ main {
   padding-top:10rem;
   text-align: center;
   height:100%;
-  margin-bottom: 3rem;
+  margin-bottom: calc(50 * var(--rpx-vw));
   /*
   */
 }
 
 .main-section h2 {
   font-family: 'Clash Grotesk', sans-serif;
-  font-weight: 600;
+  font-weight: calc(300 * var(--rpx-vw));
   font-size: calc(54 * var(--rpx-vw));
-  margin-bottom: 1rem;
+  margin-bottom: calc(4 * var(--rpx-vw));
 }
 
 .main-section p {
-  font-weight: 300;
+  font-weight: calc(300 * var(--rpx-vw));
   font-size: calc(42 * var(--rpx-vw));
-  margin-bottom: 2rem;
+  margin-bottom: calc(34 * var(--rpx-vw));
 }
 
 h3{
@@ -134,7 +134,6 @@ h3{
     align-items: center;
   }
 
-}
 
 .toggle-button-cover {
   display: table-cell;
@@ -158,7 +157,7 @@ h3{
   top: 50%;
   width: 74px;
   height: 36px;
-  margin: -20px auto 0 auto;
+  margin: calc(-15 * var(--rpx-vw)) auto 0 auto;
   overflow: hidden;
 }
 
@@ -216,7 +215,7 @@ h3{
 }
 
 #toggle-button .checkbox:checked:active + .knobs:before {
-  margin-left: -26px;
+  margin-left: calc(-42 * var(--rpx-vw));
 }
 
 #toggle-button .checkbox:checked + .knobs:before {
@@ -228,15 +227,19 @@ h3{
 #toggle-button .checkbox:checked ~ .layer {
   background-color: #fcebeb;
 }
-.myImg, .introduce{
+.introduce{
   display: inline-block;
-  width: 20%;
-  height: 20%;
 }
 .myImg > img{
-  width: auto;
-  height: auto;
+  width: calc(280 * var(--rpx-vw));
+  height: calc(320 * var(--rpx-vw));
 }
+
+.stack_img{
+  width: calc(80 * var(--rpx-vw));
+  height: calc(80 * var(--rpx-vw));;
+}
+
 .projects-list{
   margin-right: auto;
   margin-left: auto;
@@ -262,7 +265,7 @@ img{
 .form__group {
   position: relative;
   padding: 20px 0 0;
-  width: 100%;
+  width: calc(600 * var(--rpx-vw));
 }
 
 .form__field {
@@ -341,7 +344,7 @@ button:before {
   content: "";
   display: inline-block;
   height: 1px;
-  margin-right: 10px;
+  margin-right: calc(42 * var(--rpx-vw));
   transition: all .42s cubic-bezier(.25,.8,.25,1);
   width: 0;
 }

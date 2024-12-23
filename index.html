@@ -60,15 +60,14 @@
   <section id="about" class="main-section" data-scroll-section>
     <h2 class="title-section" data-scroll data-scroll-speed="1">About Me</h2>
     <p class="subtitle-section" data-scroll data-scroll-speed="2">Introduce my self</p>
-    <div>
-      <div class="myImg"><img src="img/me.jpg" alt=""></div>
+    <div class="myImg flex items-center justify-center">
+      <img class="items-center" src="img/me.jpg" alt="">
       <div class="introduce" style="text-align: left; margin-left: 60px; width: auto">
         <ul>
           <li>이름 : 장홍빈</li>
           <li>생년월일 : 950730</li>
           <li>전화번호 : 010-6448-0039</li>
           <li>Email : qlscm95@gmail.com</li>
-
         </ul>
       </div>
     </div>
@@ -169,17 +168,17 @@
           <h2>Languages</h2>
           <div style="width: auto; display: inline-block; margin-right: 45px">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Icon"
-                 style="width:100px; height:100px;">
+                 class="stack_img">
             <p style="text-align: center">Java</p>
           </div>
           <div style="width: auto; display: inline-block; margin-right: 45px">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Icon"
-                 style="width:100px; height:100px;">
+                 class="stack_img">
             <p style="text-align: center">Python</p>
           </div>
           <div style="width: auto; display: inline-block; margin-right: 45px">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                 alt="javascript Icon" style="width:100px; height:100px;">
+                 alt="javascript Icon" class="stack_img">
             <p style="text-align: center">Java Script</p>
           </div>
         </div>
@@ -187,12 +186,12 @@
           <h2>Frameworks</h2>
           <div style="width: auto; display: inline-block; margin-right: 45px">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="spring Icon"
-                 style="width:100px; height:100px;">
+                 class="stack_img">
             <p style="text-align: center">Spring Boot</p>
           </div>
           <div style="width: auto; display: inline-block; margin-right: 45px">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="flask Icon"
-                 style="width:100px; height:100px;">
+                 class="stack_img">
             <p style="text-align: center">Flask</p>
           </div>
         </div>
@@ -201,7 +200,7 @@
           <h2>Database</h2>
           <div style="width: auto; display: inline-block; margin-right: 45px">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="mysql Icon"
-                 style="width:100px; height:100px;">
+                 class="stack_img">
             <p style="text-align: center">MySQL</p>
           </div>
         </div>
@@ -210,7 +209,7 @@
           <h2>Tools/ DevOps</h2>
           <div style="width: auto; display: inline-block; margin-right: 45px">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="git Icon"
-                 style="width:100px; height:100px;">
+                 class="stack_img">
             <p style="text-align: center">GIT HUB</p>
           </div>
         </div>
@@ -222,30 +221,30 @@
 
   <section id="contact" class="main-section" data-scroll-section style="margin-top: -15rem">
     <h2 class="title-section" data-scroll data-scroll-speed="1">Contact Me</h2>
-    <form action="https://script.google.com/macros/s/AKfycbwo3SN-lZ5cdY575-lOWh2oR3H00SmXkAH06rn5Eoumgjn8pQxHxlx-WDsmWMC7_G9s/exec" method="POST" target="frAttechFiles" onsubmit="alert('Thank you');">
-      <div class="contact mr-auto ml-auto" data-scroll data-scroll-speed="2" style="text-align: left; width: 30rem">
-        <div class="form__group field">
-          <input type="text" class="form__field" placeholder="name" required="" name="name">
-          <label  class="form__label">Name</label>
-        </div>
-        <div class="form__group field">
-          <input type="text" class="form__field" placeholder="E-mail" required="" name="email">
-          <label  class="form__label">E-mail</label>
-        </div>
-        <div class="form__group field">
-          <input type="tel" class="form__field" placeholder="Phone" required="" name="tel">
-          <label  class="form__label">Tel.</label>
-        </div>
-        <div class="form__group field">
-          <textarea class="form__field" id="message" name="message" rows="4" placeholder="Body" required></textarea><br><br>
-          <label  class="form__label">Body</label>
-        </div>
-        <div style="text-align: center">
-          <button type="submit">보내기</button>
-        </div>
-        <iframe name="frAttechFiles" style="display: none"></iframe>
-
+    <form
+      action="https://script.google.com/macros/s/AKfycbwo3SN-lZ5cdY575-lOWh2oR3H00SmXkAH06rn5Eoumgjn8pQxHxlx-WDsmWMC7_G9s/exec"
+      method="POST" target="frAttechFiles" onsubmit="alert('Thank you');" data-scroll data-scroll-speed="2">
+      <div class="form__group field mr-auto ml-auto">
+        <input type="text" class="form__field" placeholder="name" required="" name="name">
+        <label class="form__label">Name</label>
       </div>
+      <div class="form__group field mr-auto ml-auto">
+        <input type="text" class="form__field" placeholder="E-mail" required="" name="email">
+        <label class="form__label">E-mail</label>
+      </div>
+      <div class="form__group field mr-auto ml-auto">
+        <input type="tel" class="form__field" placeholder="Phone" required="" name="tel">
+        <label class="form__label">Tel.</label>
+      </div>
+      <div class="form__group field mr-auto ml-auto">
+        <textarea class="form__field" id="message" name="message" rows="4" placeholder="Body"
+                  required></textarea><br><br>
+        <label class="form__label">Body</label>
+      </div>
+      <div style="text-align: center">
+        <button type="submit">보내기</button>
+      </div>
+      <iframe name="frAttechFiles" style="display: none"></iframe>
     </form>
   </section>
 
